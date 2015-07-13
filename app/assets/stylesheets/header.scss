@@ -1,12 +1,27 @@
-#headerBG {
-	background-color: orange;
-	height: 10em;
-	width: 100%;
+body { 
+	padding-top: 0em; 
+	margin-left: 0em;
+	margin-right: 0em;
 }
 
+.breadcrumb {
+	list-style: none;
+	background-color: orange;
+	height: 3em;
+	text-align: center;
+}
 
-#headerBG > p {
+.breadcrumb > a > li {
+	display: inline;
+	border-color: white;
+	border-style: solid;
+	border-radius: .5em;
+	border-width: 1px;
+	padding: .5em;
 	position: relative;
-	left: 2em;
-	top: 4em;
+	top: 1em;
+}
+
+.breadcrumb > a {
+	text-decoration: none;
 }

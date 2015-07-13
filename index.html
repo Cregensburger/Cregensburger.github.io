@@ -1,9 +1,14 @@
 <!DOCTYPE HTML>
 <html>
+<!-- -->
 	<head>
 		<title>C. Regensburger</title>
 		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+
 	</head>
+	<!-- Onclick will go to specified subject matter. It is sticky, 
+		 so it will scroll with the user as they explore the page.-->
 	<header>
 		<nav id="navBar" class="navbar navbar-default navbar-fixed-top">
 		  <div class="container-fluid">
@@ -18,8 +23,18 @@
 		  </div>
 		</nav>
 	</header>
-	<body>
-	<div id="datBody">
+
+	<div id="divBody">
+		<!-- Basic blurb about myself, explain my WDI experience 
+			 and also a headshot. -->
+		<div id="aboutMe">
+			<img id="headShot" src="images/headshot.jpg">
+			<div id="headLine">raglbaglrahlglafkl</div>
+			<h3>About Me</h3>
+			<p>Personal description</p>
+		</div>
+
+		<!-- Contact view, will provide links to various websites -->
 		<div id="contactMe">
 			<h3 id="categoryHeader">Contact Me</h3>
 			<p>Name</p>
@@ -28,10 +43,8 @@
 			<p>Address</p>
 			<p>Github link</p>
 		</div>
-		<div id="aboutMe">
-			<h3>About Me</h3>
-			<p>Personal description</p>
-		</div>
+
+
 		<div id="projects">
 			<h3>Programming Projects</h3>
 			<p>Overview of General Assembly</p>
@@ -58,9 +71,8 @@
 			<p>Digital</p>
 			<p>Traditional</p>
 		</div>
-	</body>
+
 	</div>
 	<footer>
-		<%= render 'layouts/footer' %>
 	</footer>
 </html>

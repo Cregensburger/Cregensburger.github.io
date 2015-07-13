@@ -33,6 +33,9 @@
 		margin-top: 0;
 		text-align: center;
 		position: fixed;
+		border-color: green;
+		border-bottom: solid white;
+		border-width: 2px;
 	}
 
 	/* nav bar font styling */
@@ -63,7 +66,7 @@
 	/* hovering over link link */
 	.breadcrumb > a > li:hover {
 		background-color: #3333CC;
-		font-size: 1.1em;
+		font-size: 1.02em;
 	}
 
 	/* visited link */
@@ -86,7 +89,7 @@
 		margin-left: 0;
 	}
 
-	#datBody {
+	#divBody {
 		position: relative;
 		padding-left: 2em;
 		padding-top: 7em;
@@ -99,4 +102,25 @@
 
 	p {
 		font-family: 'Lora', serif;
+	}
+
+	/* About Me styling */
+	#headShot {
+		height: 7em;
+		width: 7em;
+		border-color: white;
+		border-style: solid;
+		border-radius: 4em;
+		border-width: 3px;
+	}​
+
+	#headLine {
+		height: 2px;
+		width: 10px;
+		color: white;
+		background-color: orange;
+		border-color: green;
+		border-style: solid;
+		border-radius: 4em;
+		border-width: 3px;
 	}

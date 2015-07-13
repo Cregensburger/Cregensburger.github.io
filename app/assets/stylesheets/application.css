@@ -13,11 +13,32 @@
  *= require_tree .
  *= require_self
  */
+
+/* Header Font */
+@import url('http://fonts.googleapis.com/css?family=Ubuntu');
+
+/* Body Font */
+@import url('http://fonts.googleapis.com/css?family=Lora');
+
+
+/* General body styling */
 body {
+	background-image: url("skybg.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
 	margin-top: 0;
 }
 
-#bodyContent {
+#datBody {
 	position: relative;
-	left: 3em;
+	padding-left: 2em;
+	z-index: -1;
+}
+
+h3 {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+p {
+	font-family: 'Lora', serif;
 }

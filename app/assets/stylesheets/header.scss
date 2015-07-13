@@ -4,11 +4,17 @@ body {
 	margin-right: 0em;
 }
 
+#navBar {
+	margin-top: 0em;
+}
 .breadcrumb {
 	list-style: none;
-	background-color: orange;
-	height: 3em;
+	background-color: lightblue;
+	height: 3.3em;
+	width: 100%;
+	margin-top: 0;
 	text-align: center;
+	position: fixed;
 }
 
 .breadcrumb > a > li {
@@ -24,4 +30,6 @@ body {
 
 .breadcrumb > a {
 	text-decoration: none;
+	color: white;
+	font-family: 'Alegreya Sans', sans-serif;
 }

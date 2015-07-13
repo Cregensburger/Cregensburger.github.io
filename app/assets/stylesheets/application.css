@@ -20,6 +20,10 @@
 /* Body Font */
 @import url('http://fonts.googleapis.com/css?family=Lora');
 
+/* Normalizer */
+* {
+    margin-top:0;
+ }
 
 /* General body styling */
 body {

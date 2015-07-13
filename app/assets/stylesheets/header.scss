@@ -18,6 +18,15 @@ body {
 	position: fixed;
 }
 
+/* nav bar font styling */
+.breadcrumb > a {
+	color: white;
+	font-family: 'Alegreya Sans', sans-serif;
+	font-size: 100%;
+	text-decoration: none;
+}
+
+/* nav bar links */
 .breadcrumb > a > li {
 	display: inline;
 	border-color: white;
@@ -28,11 +37,19 @@ body {
 	margin: .2em;
 	position: relative;
 	top: 1em;
+	-moz-transition: all .4s ease-in;
+    -o-transition: all .4s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .4s ease-in;
 }
 
-.breadcrumb > a {
-	text-decoration: none;
-	color: white;
-	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 100%;
+/* hovering over link link */
+.breadcrumb > a > li:hover {
+	background-color: #3333CC;
+	font-size: 1.1em;
+}
+
+/* visited link */
+.breadcrumb > a > li:visited {
+    color: white;
 }

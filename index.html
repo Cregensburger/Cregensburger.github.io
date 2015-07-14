@@ -10,38 +10,37 @@
 	<!-- Onclick will go to specified subject matter. It is sticky, 
 		 so it will scroll with the user as they explore the page.-->
 	<header>
-		<nav id="navBar" class="navbar navbar-default navbar-fixed-top">
-		  <div class="container-fluid">
-		  	<ol class="breadcrumb">
-			  <a href="#" class="hvr-pulse-grow"><li>Contact Me</li></a>
-			  <a href="#" class="button hvr-grow"><li>About Me</li></a>
-			  <a href="#" class="button hvr-grow"><li>Programming</li></a>
-			  <a href="#" class="button hvr-grow"><li>Work Experience</li></a>
-			  <a href="#" class="button hvr-grow"><li>Travel</li></a>
-			  <a href="#" class="button hvr-grow"><li>Art Portfolio</li></a>
-			</ol>
-		  </div>
-		</nav>
+	  	<ol class="breadcrumb">
+			  <a href="#about" class="button hvr-grow"><li>About</li></a>
+			  <a href="#contact" class="hvr-pulse-grow"><li>Contact</li></a>
+			  <a href="#programming" class="button hvr-grow"><li>Programming</li></a>
+			  <a href="#work" class="button hvr-grow"><li>Work Experience</li></a>
+			  <a href="#travel" class="button hvr-grow"><li>Travel</li></a>
+			  <a href="#art" class="button hvr-grow"><li>Art Portfolio</li></a>
+		</ol>
 	</header>
-
+	<body>
 	<div id="divBody">
 		<!-- Basic blurb about myself, explain my WDI experience 
 			 and also a headshot. -->
+		<a name="about"></a>
 		<div id="aboutMe">
-			<img id="headShot" src="images/headshot.jpg">
-			<div id="headLine">raglbaglrahlglafkl</div>
-			<h3>About Me</h3>
-			<p>Personal description</p>
+			<div id="headShot"></div>
+			<h3 id="aboutMeHeader">About</h3>
+			<p id="aboutMeParagraph">Personal description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 		</div>
 
 		<!-- Contact view, will provide links to various websites -->
 		<div id="contactMe">
-			<h3 id="categoryHeader">Contact Me</h3>
-			<p>Name</p>
-			<p>Email</p>
-			<p>Phone</p>
-			<p>Address</p>
-			<p>Github link</p>
+			<p id="characterEnvelope">&#9990;</p>
+			<h3 id="categoryHeader" class="contactContent">Contact</h3>
+			<ol id="contactMeList" class="contactContent">
+				<li><p><b> Courtney Regensburger</b> </p></li>
+				<li><p><b> Email:</b>  courtneyregensburger@yahoo.com</p></li>
+				<li><p><b> Phone:</b>  (513) 368-2670 </p></li>
+				<li><p><b> Address:</b>  2270 Lauren Close <br> Cincinnati, Ohio 45244</p></li>
+				<li><p><b> Github link:</b> <a>https://github.com/Cregensburger</a></p></li>
+			</ol>
 		</div>
 
 
@@ -71,8 +70,6 @@
 			<p>Digital</p>
 			<p>Traditional</p>
 		</div>
-
 	</div>
-	<footer>
-	</footer>
+	</body>
 </html>

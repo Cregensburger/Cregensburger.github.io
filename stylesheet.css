@@ -98,7 +98,7 @@
 	/* About Me styling */
 
 	#aboutMe {
-		background-color: #FF8080;
+		background-color: #99C2FF;
 		background-size: cover;
 		padding: 2em;
 	}
@@ -107,14 +107,14 @@
 		height: 10em;
 		width: 10em;
 		content:url("images/headshot.jpg");
-		background-color: #FF8080;
+		background-color: #E6F0FF;
 		border-color: white;
 		border-style: solid;
 		border-radius: 5em;
 		border-width: 3px;
 		position: relative;
 		top: 3em;
-		left: 35em;
+		left: 45%;
 	}​
 
 
@@ -125,7 +125,7 @@
 	/* Contact Me styling */
 	#contactMe {
 		padding: 2em;
-		background-color: #FF4D4D;
+		background-color: #66A3FF;
 		background-size: cover;
 	}
 
@@ -150,27 +150,27 @@
 	/* Programming Projects styling */
 	#projects {
 		padding: 2em;
-		background-color: #FF1919;
+		background-color: #3385FF;
 		background-size: cover;
 	}
 
 	/* Work Experience styling */
 	#workExp {
 		padding: 2em;
-		background-color: #E60000;
+		background-color: #0066FF;
 		background-size: cover;
 	}
 
 	/* Travel styling */
 	#travel {
 		padding: 2em;
-		background-color: #B20000;
+		background-color: #0052CC;
 		background-size: cover;
 	}
 
 	/* Art Portfolio styling */
 	#artPortfolio {
 		padding: 2em;
-		background-color: #800000;
+		background-color: #003D99;
 		background-size: cover;
 	}

@@ -48,6 +48,8 @@
 
 	/* nav bar links */
 	.breadcrumb > a > li {
+		display: inline;
+		list-style: none;
 		border-color: white;
 		border-style: solid;
 		border-radius: 1em;
@@ -81,29 +83,33 @@
 		z-index: -10;
 	}
 
-	li {
+/*	li {
 		display: inline;
 		list-style: none;
-
-	}
+	}*/
 
 	h3 {
 		font-family: 'Ubuntu', sans-serif;
+		color: white;
 	}
 
 	p {
 		font-family: 'Lora', serif;
+		color: white;
+		font-size: 100%;
 	}
 
 	/* About Me styling */
 
-	#aboutMe {
+	#about {
 		background-color: #99C2FF;
 		background-size: cover;
 		padding: 2em;
+		padding-left: 11%;
+		padding-right: 11%;
 	}
 
-	#aboutMe > #headShot {
+	#about > #headShot {
 		height: 10em;
 		width: 10em;
 		content:url("images/headshot.jpg");
@@ -114,86 +120,93 @@
 		border-width: 3px;
 		position: relative;
 		top: 3em;
-		left: 45%;
+		left: 40%;
 	}​
 
 
-	#aboutMe > .aboutContent {
+	#about > .aboutContent {
 
 	}
 
 	/* Contact Me styling */
-	#contactMe {
-		padding: 2em;
+	#contact {
+		padding-left: 20%;
+		padding-right: 30%;
 		background-color: #66A3FF;
 		background-size: cover;
 	}
 
-	#contactMe > #characterEmail {
+	#contact > #characterEmail {
 		color: #0052CC;
-		font-size: 15em;
+		font-size: 1500%;
 		display: inline;
-		position: relative;
-		left: 32%;
 	}
 
-	#contactMe > .contactContent {
+	#contact > .contactContent {
 		display: inline-block;
-		position: relative;
-		left: 34%;
+		list-style: none;
 	}
 
 	/* Programming Projects styling */
-	#projects {
+	#programming {
 		padding: 2em;
 		background-color: #3385FF;
 		background-size: cover;
 	}
 
-	/* Tic Tac Toe screenshot */
-	#tictactoeScreenshot {
-		height: 20%;
-		width: 25%;
-		content:url("images/tictactoeScreenshot.png");
+	#projectInformation {
+		display: block;
+		list-style: none;
+		background-color: #3385FF;
+		width: 100%;
+		background-size: cover;
+		text-align: center;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	
+
+	/* Tic Tac Toe Screenshot */
+	.projectTab {
+		display: block;
+	}
+	.projectTab > img {
+		height: auto; 
+	    width: auto; 
+	    max-width: 15%; 
+	    max-height: 20%;
 		border-color: white;
 		border-style: solid;
 		border-radius: 1em;
 		border-width: 3px;
-		display: inline-block;
 	}​
 
-	/* App-etite screenshot */
-	#appetiteScreenshot {
-		height: 5em;
-		width: 10em;
-		content:url("images/app-etiteScreenshot.png");
-		border-color: white;
-		border-style: solid;
-		border-radius: 1em;
-		border-width: 3px;
-		display: inline-block;
-		position: relative;
-		left: 2em;
-	}​
+	.projectBlurb {
+		padding-left: 3em;
+		padding-right: 3em;
+	}
 
-	/* Hangman screenshot */
-	#hangmanScreenshot {
-		height: 5em;
-		width: 10em;
-		content:url("images/hangmanScreenshot.png");
-		border-color: white;
-		border-style: solid;
-		border-radius: 1em;
-		border-width: 3px;
-		display: inline-block;
-	}​
+	#projectTab {
+		background-color: white;
+		padding-left: 3em;
+		padding-right: 3em;
+		text-decoration: none;
+		display: inline;
+	}
+
+	a {
+		text-decoration: none;
+		color: white;
+	}
 
 
 	/* Work Experience styling */
-	#workExp {
+	#work {
 		padding: 2em;
 		background-color: #0066FF;
 		background-size: cover;
+		margin-top: 0;
 	}
 
 	/* Travel styling */
@@ -204,7 +217,7 @@
 	}
 
 	/* Art Portfolio styling */
-	#artPortfolio {
+	#art {
 		padding: 2em;
 		background-color: #003D99;
 		background-size: cover;

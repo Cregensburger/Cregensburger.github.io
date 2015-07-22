@@ -17,19 +17,21 @@
 
 /* Header Navbar */
 	#navbar {
-		background: orange;
+		background: #520D10;
 		padding-left: 5%;
+		border-bottom: .5em solid #363935;
 	}
 
 	.container a {
-		border-radius: 1.5em;
-		border: 1px solid white;
-		color: black;
+		border-radius: 1em;
+		background-color: #f3fbf0;
+		border: 3px solid #6E3B2F;
 		padding: .5em;
+		
 	}
 
 	.container a:hover {
-		background-color: yellow;
+		background-color: #203763;
 		color: black;
 		text-decoration: none;
 		-moz-transition: all .4s ease-in;
@@ -38,17 +40,10 @@
 	    transition: all .4s ease-in;
 	}
 
-	.container a:hover {
-
-	}
-
 /* Main body styling */
 	#headShot {
-		background-color: #E6F0FF;
-		border-color: white;
-		border-style: solid;
+		border: .3em solid #6E3B2F;
 		border-radius: 5em;
-		border-width: 3px;
 		content:url("images/headshot.jpg");
 		height: 10em;
 		width: 10em;
@@ -57,19 +52,35 @@
 		top: 3em;
 	}​
 
-	p, a, h3 {
+	#about {
+		padding-top: 10em;
+	}
+
+/* Font formatting/styling */
+	p {
+		font-family: 'PT Serif', serif;
+		padding-left: 2%;
+		padding-right: 2%
+	}
+
+	p, .headLead {
+		color: #363935;
+		font-family: 'PT Serif', serif;
+		padding-left: 2%;
+	}
+
+	.container a, li a, .projectBlurb {
+		color: #363935;
 		font-family: 'PT Serif', serif;
 	}
 
-	p {
-		padding-left: 1%;
-	}
-
-	body {
+/* body color */
+	#allThings {
+		background-color: #E3E3D8;
 		padding: 5%;
 	}
 
-
+/* number removal */
 	#contactMeList {
 		list-style: none;
 		padding-left: 0;
@@ -82,30 +93,35 @@
 		width: 30%;
 		text-align: center;
 		padding: 1em;
-		padding-bottom: 10em;
+		margin-left: 1em;
+		float: left;
 	}
+
 	.projectImages {
 		height: 80%;
 		width: 100%;
-		padding-bottom: 1em;
+		border: .3em solid #6E3B2F;
+		border-radius: .5em;
 	}
 
-	#tictactoe {
-		float: left;
-		display: inline-block;
+	.projectText {
+		padding-top: .5em;
+	}
+/* text BG */
+	#whiteBox {
+		background-color: #f3fbf0;
+		height: 70%;
+		width: 100%;
+		border-radius: 1em;
+		padding-bottom: 3em;
 	}
 
-	#appetite {
-		float: left;
-		display: inline-block;
-	}
-
-	#hangman {
-		float: left;
-		display: inline-block;
+/* line breaker project to work */
+	#breaker {
+		clear: left;
 	}
 
 /* Work Styling Section */
 	#work {
-		
+		overflow: hidden;
 	}

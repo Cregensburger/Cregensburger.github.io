@@ -1,127 +1,286 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
-@import url(http://fonts.googleapis.com/css?family=PT+Serif:400italic);
-
-/* Header Navbar */
-	#navbar {
-		background: #520D10;
-		padding-left: 5%;
-		border-bottom: .5em solid #363935;
+/* Overarching body style*/
+	html {
+		height: 100%;
+		overflow: visible;
 	}
 
-	.container a {
-		border-radius: 1em;
-		background-color: #f3fbf0;
-		border: 3px solid #6E3B2F;
-		padding: .5em;
-		
+	body {
+		background-color: #D4DACC;
+		height: 100%;
+		color: rgba(98,103,92, 1);
 	}
 
-	.container a:hover {
-		background-color: #203763;
-		color: black;
-		text-decoration: none;
-		-moz-transition: all .4s ease-in;
-	    -o-transition: all .4s ease-in;
-	    -webkit-transition: all .2s ease-in;
-	    transition: all .4s ease-in;
+	.col-xs-8 {
+		max-width: 80%;
+	}
+	
+	/* Bars on either side */
+		.col-xs-1 {
+			background: #F4F7EF;
+		    height: 100%;
+
+		}
+
+			.col-xs-1:nth-child(1) {
+				float: left;
+			}
+
+			.col-xs-1:nth-child(2) {
+				float: right;
+			}
+
+
+
+/* Navbar styling */
+	#navigation {
+		background-color: #10acba;
+		border-bottom: .3em solid #ba7310;
+		margin: 0;
+		z-index: 2;
+		border-radius: 0;
+		padding-top: .2em;
+		color: #F4F7EF;
 	}
 
-/* Main body styling */
-	#headShot {
-		border: .3em solid #6E3B2F;
-		border-radius: 5em;
-		content:url("images/headshot.jpg");
-		height: 10em;
-		width: 10em;
+
+	#navBarIcons {
+		display: inline-block;
 		position: relative;
-		left: 45%;
-		top: 3em;
-	}​
+		bottom: 1.5em;
+		right: 4em;
+	}
+	
+		button {
+			border: none;
+			background-color: rgba( 0, 0, 0, 0);
+		} 
 
-	#about {
-		padding-top: 10em;
+		button:focus {
+			outline: none;
+		}
+
+		.icons {
+			color: #F4F7EF;
+			cursor: pointer;
+			list-style: none;
+			font-size: 1.6em;
+			display: inline;
+		    padding: 5%;
+		    position: relative;
+		    top: 1em;
+		}
+
+	#tagline {
+		display: inline-block;
+		margin-top: 0;
+		padding-left: 4%;
 	}
 
-/* Font formatting/styling */
-	p {
-		font-family: 'PT Serif', serif;
-		padding-left: 2%;
-		padding-right: 2%
+	#nameHolder h1 {
+		margin-bottom: 0;
 	}
 
-	p, .headLead {
-		color: #363935;
-		font-family: 'PT Serif', serif;
-		padding-left: 2%;
+	#headerTextContainer {
+		float: left;
+		display: inline-block;
 	}
 
-	.container a, li a, .projectBlurb {
-		color: #363935;
-		font-family: 'PT Serif', serif;
+/* About Me Styling */
+	/* About picture */
+	#aboutPicture {
+		float: left;
+		display: inline-block;
+		height: calc(100%-60%);
+		width: 45%;
 	}
 
-/* body color */
-	#allThings {
-		background-color: #E3E3D8;
-		padding: 5%;
-	}
-
-/* number removal */
+	/* number removal */
 	#contactMeList {
 		list-style: none;
 		padding-left: 0;
 	}
 
+		#contactMeList a {
+			text-decoration: underline;
+			color: rgba(98,103,92, 1);
+		}
+	
 
 /* Project Styling Section */
-	.projectTab {
-		height: 30%;
-		width: 30%;
-		text-align: center;
-		padding: 1em;
-		margin-left: 1em;
-		float: left;
+	#projects, #workExperience, #travel, #doodles {
+		padding-left: 20%;
 	}
 
 	.projectImages {
-		height: 80%;
-		width: 100%;
-		border: .3em solid #6E3B2F;
+		height: 30%;
+		width: 50%;
+		margin: 0 auto;
+    	padding-top: 2em;
+	}
+
+	.carousel-caption {
+		position: relative;
+		top: 1em;
+		max-width: 60%;
 		border-radius: .5em;
+		background-color: #10acba;
+		z-index: -1;
+		border: 1px solid black;
+		padding-left: .5em;
+		padding-right: .5em;
 	}
 
-	.projectText {
-		padding-top: .5em;
+	.carousel-caption a {
+		text-decoration: underline;
+		color: white;
 	}
-/* text BG */
-	#whiteBox {
-		background-color: #f3fbf0;
-		height: 70%;
-		width: 100%;
+
+	.carousel-control {
+		top: 30%;
 		border-radius: 1em;
-		padding-bottom: 3em;
+		height: 3em;
+		width: 3em;
 	}
 
-/* line breaker project to work */
-	#breaker {
-		clear: left;
+	.carousel-indicators {
+		position: relative;
+		bottom: 5%;
 	}
 
-/* Work Styling Section */
-	#work {
-		overflow: hidden;
+/* Work Experience Styling */
+	#jungleAnimateWrap, #woodAnimateWrap, 
+	#krogerAnimateWrap, #universityAnimateWrap {
+		background-color: #10acba;
+		border-radius: 1em;
+		color: white;
+		max-width: 50%;
+		max-height: 50%; 
+		padding: 1em;
+		margin: 1em;
+		border: 0;
+		/* How pronounced should the 3D effects be */
+			perspective: 800px;
+			-webkit-perspective: 800px;
 	}
+
+		#jungleIconHolder, #woodIconHolder, 
+		#krogerIconHolder, #universityIconHolder {
+			color: white;
+			max-width: 75%;
+			max-height: 50%;
+			border-radius: 50%;
+			background-color: #10acba;
+			padding: .2em;
+			font-size: 800%;
+			position: absolute;
+			left: 30%;
+			bottom: 50%;
+		}
+			#jungleIconHolder, #universityIconHolder {
+				font-size: 1000%;
+				position: absolute;
+				top: 15%;
+			}
+			#jungleIconHolder, #jungleBack, 
+			#woodIconHolder, #woodBack, 
+			#krogerIconHolder, #krogerBack,
+			#universityIconHolder, #universityBack {
+
+
+				/* Enable 3D transforms */
+					transform-style: preserve-3d;
+					-webkit-transform-style: preserve-3d;
+
+				/* We are using two separate divs for the front and back of the
+				   phone. This will hide the divs when they are flipped, so that the
+				   opposite side can be seen:  */
+					backface-visibility: hidden;
+					-webkit-backface-visibility: hidden;
+
+				/* Animate the transitions */
+					transition:0.8s;
+			}
+
+			#jungleBack, #woodBack, #krogerBack, #universityBack {
+				/* The back side is flipped 180 deg by default */
+				transform:rotateY(180deg);
+				-webkit-transform:rotateY(180deg);
+
+				background-position:right center;
+			}
+
+			#jungleAnimateWrap:hover #jungleIconHolder, 
+			#woodAnimateWrap:hover #woodIconHolder, 
+			#krogerAnimateWrap:hover #krogerIconHolder, 
+			#universityAnimateWrap:hover #universityIconHolder {
+				/* When the container is hovered, flip the front side and hide it .. */
+				transform:rotateY(180deg);
+				-webkit-transform:rotateY(180deg);
+			}
+
+			#jungleAnimateWrap:hover #jungleBack, 
+			#woodAnimateWrap:hover #woodBack, 
+			#krogerAnimateWrap:hover #krogerBack, 
+			#universityAnimateWrap:hover #universityBack {
+				/* .. at the same time flip the back side into visibility */
+				transform:rotateY(360deg);
+				-webkit-transform:rotateY(360deg);
+			}
+
+
+		.workContainer h3, .workContainer p {
+			font-size: 75%;
+			width: 50%;  
+	   		position: relative;
+	   		left: 30%;
+		}
+
+
+
+/* Media query for smaller screens, remove picture */
+@media (max-width: 700px) { 
+	/* remove the about-me picture and white border for phone view*/
+		#aboutPicture, .col-xs-1 {
+			display: none;
+		}
+
+		.workContainer {
+			border-radius: 0;
+			width: calc(100%-10%);
+			height: 10%;
+		}
+			#jungleIconHolder, #woodIconHolder, 
+			#krogerIconHolder, #universityIconHolder {
+				color: white;
+				max-width: 75%;
+				max-height: 50%;
+				border-radius: 50%;
+				background-color: #10acba;
+				padding: .2em;
+				font-size: 200%;
+				position: absolute;
+				left: 20%;
+				bottom: 50%;
+			}
+
+			#university {
+				position: relative;
+				left: 0%;
+			}
+
+			#woodLamping {
+			 	position: relative;
+			 	left: 0%;
+			 }
+
+			.workContainer h3, .workContainer p {
+				width: calc(100%-10%);
+			}
+
+		body {
+			margin-left: auto;
+	    	margin-right: auto;
+			border: 0;
+			padding: 0;
+		}
+}

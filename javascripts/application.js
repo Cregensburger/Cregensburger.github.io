@@ -15,3 +15,10 @@
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require_tree .
+
+if (!Modernizr.csstransforms3d) {
+  $('label').click(function() {
+    $('.animate .front').removeClass('front');
+    $(this).addClass('front');
+  });
+}

@@ -1,38 +1,97 @@
 /* Overarching body style*/
-	html, body {
+	html {
 		height: 100%;
+		overflow: visible;
 	}
 
 	body {
 		background-color: #D4DACC;
+		height: 100%;
 		color: rgba(98,103,92, 1);
-		line-height: 1.3;
+	}
+
+	.col-xs-8 {
+		max-width: 80%;
+	}
+	
+	/* Bars on either side */
+		.col-xs-1 {
+			background: #F4F7EF;
+		    height: 100%;
+
+		}
+
+			.col-xs-1:nth-child(1) {
+				float: left;
+			}
+
+			.col-xs-1:nth-child(2) {
+				float: right;
+			}
+
+
+
+/* Navbar styling */
+	#navigation {
+		background-color: #10acba;
+		border-bottom: .3em solid #ba7310;
+		margin: 0;
+		z-index: 2;
+		border-radius: 0;
+		padding-top: .2em;
+		color: #F4F7EF;
 	}
 
 
-/* Navigation styling */
-	.navbar-default {
-		background-color: #fff;
-		padding: 12px 0;
-		box-shadow: 0 0 3px #ccc;
-		font-weight: 500;
+	#navBarIcons {
+		display: inline-block;
+		position: relative;
+		bottom: 1.5em;
+		right: 4em;
+	}
+	
+		button {
+			border: none;
+			background-color: rgba( 0, 0, 0, 0);
+		} 
+
+		button:focus {
+			outline: none;
+		}
+
+		.icons {
+			color: #F4F7EF;
+			cursor: pointer;
+			list-style: none;
+			font-size: 1.6em;
+			display: inline;
+		    padding: 5%;
+		    position: relative;
+		    top: 1em;
+		}
+
+	#tagline {
+		display: inline-block;
+		margin-top: 0;
+		padding-left: 4%;
 	}
 
-	/* Name navigation styling */
-	.navbar-brand {
-		padding-bottom: 0;
+	#nameHolder h1 {
+		margin-bottom: 0;
+	}
+
+	#headerTextContainer {
+		float: left;
+		display: inline-block;
 	}
 
 /* About Me Styling */
-	#about {
-		padding-top: 100px;
-	}
-
-	#about img {
-		margin-top: 0;
-		width: 60%;
-		position: relative;
-		left: 10%;
+	/* About picture */
+	#aboutPicture {
+		float: left;
+		display: inline-block;
+		height: calc(100%-60%);
+		width: 45%;
 	}
 
 	/* number removal */
@@ -45,12 +104,16 @@
 			text-decoration: underline;
 			color: rgba(98,103,92, 1);
 		}
+	
 
 /* Project Styling Section */
+	#projects, #workExperience, #travel, #doodles {
+		padding-left: 20%;
+	}
+
 	.projectImages {
-		position: relative;
-		left: 20%;
-		width: 60%;
+		height: 30%;
+		width: 50%;
 		margin: 0 auto;
     	padding-top: 2em;
 	}
@@ -59,8 +122,10 @@
 		position: relative;
 		top: 1em;
 		max-width: 60%;
+		border-radius: .5em;
 		background-color: #10acba;
 		z-index: -1;
+		border: 1px solid black;
 		padding-left: .5em;
 		padding-right: .5em;
 	}
@@ -71,15 +136,13 @@
 	}
 
 	.carousel-control.right, .carousel-control.left {
-		background-image: none;
-		top: 8em;
+	  background-image: none;
 	}
 
 	.carousel-control {
-		background-color: #10acba;
 		border-radius: 1em;
-		height: 10%;
-		width: 10%;
+		height: 3em;
+		width: 3em;
 	}
 
 	.carousel-indicators {
@@ -91,9 +154,10 @@
 	#jungleAnimateWrap, #woodAnimateWrap, 
 	#krogerAnimateWrap, #universityAnimateWrap {
 		background-color: #10acba;
-		height: 300%;
 		border-radius: 1em;
 		color: white;
+		max-width: 50%;
+		max-height: 50%; 
 		padding: 1em;
 		margin: 1em;
 		border: 0;
@@ -105,22 +169,27 @@
 		#jungleIconHolder, #woodIconHolder, 
 		#krogerIconHolder, #universityIconHolder {
 			color: white;
+			max-width: 75%;
+			max-height: 50%;
 			border-radius: 50%;
+			background-color: #10acba;
 			padding: .2em;
 			font-size: 800%;
 			position: absolute;
-			left: 35%;
+			left: 30%;
+			bottom: 50%;
 		}
-
-		#woodIconHolder, #krogerIconHolder {
-			font-size: 625%
-		}
-
-
+			#jungleIconHolder, #universityIconHolder {
+				font-size: 1000%;
+				position: absolute;
+				top: 15%;
+			}
 			#jungleIconHolder, #jungleBack, 
 			#woodIconHolder, #woodBack, 
 			#krogerIconHolder, #krogerBack,
 			#universityIconHolder, #universityBack {
+
+
 				/* Enable 3D transforms */
 					transform-style: preserve-3d;
 					-webkit-transform-style: preserve-3d;
@@ -164,17 +233,57 @@
 
 		.workContainer h3, .workContainer p {
 			font-size: 75%;
-			max-width: 80%;
+			width: 50%;  
 	   		position: relative;
-	   		left: 10%;
+	   		left: 30%;
 		}
 
 
 
-
-/* Media query phone sized */
+/* Media query for smaller screens, remove picture */
 @media (max-width: 700px) { 
-	.carousel-caption {
-		max-width: 70%;
-	}
+	/* remove the about-me picture and white border for phone view*/
+		#aboutPicture, .col-xs-1 {
+			display: none;
+		}
+
+		.workContainer {
+			border-radius: 0;
+			width: calc(100%-10%);
+			height: 10%;
+		}
+			#jungleIconHolder, #woodIconHolder, 
+			#krogerIconHolder, #universityIconHolder {
+				color: white;
+				max-width: 75%;
+				max-height: 50%;
+				border-radius: 50%;
+				background-color: #10acba;
+				padding: .2em;
+				font-size: 200%;
+				position: absolute;
+				left: 20%;
+				bottom: 50%;
+			}
+
+			#university {
+				position: relative;
+				left: 0%;
+			}
+
+			#woodLamping {
+			 	position: relative;
+			 	left: 0%;
+			 }
+
+			.workContainer h3, .workContainer p {
+				width: calc(100%-10%);
+			}
+
+		body {
+			margin-left: auto;
+	    	margin-right: auto;
+			border: 0;
+			padding: 0;
+		}
 }

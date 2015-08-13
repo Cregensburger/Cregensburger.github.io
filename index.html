@@ -1,6 +1,5 @@
 <!DOCTYPE HTML>
 <html lang="en">
-<html>
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,7 +7,7 @@
 		
 		<!-- Bootstrap linking -->
 		<!-- Bootstrap core CSS -->
-		<link href="/css/bootstrap.css" rel="stylesheet">
+		<link href="css/bootstrap.css" rel="stylesheet">
   		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<!--Carousel link-->
  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
@@ -29,9 +28,6 @@
 		my name, tagline and the navigation. Should stack cleanly
 		when window size shrinks. -->
 		<div class="row" id="navigation">
-			<div class="col-xs-8" id="headerTextContainer">
-				
-			</div>
 
 		<!-- display icons in the header -->	
 		<div class="navbar navbar-default navbar-fixed-top">
@@ -39,11 +35,11 @@
 		      <div class="navbar-header">
 		        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
 		        <a class="navbar-brand" href="#home">
-					<strong>Courtney Regensburger</strong><br>
+					<div id="tabHeadLine"><strong>Courtney Regensburger</strong></div>
 					<div id="tabTagline" style="padding-left: 10%;">From curd to code</div>
 				</a> 
 			  </div>
-		      <div class="navbar-collapse collapse">
+		      <div class="navbar-collapse collapse" id="icons">
 		        <ul class="nav navbar-nav navbar-right">
 					<li> <a href="#about" class="smoothScroll"> 
 						<div class="glyphicon glyphicon-user" aria-hidden="true"></div>
@@ -53,7 +49,7 @@
 						<div class="glyphicon glyphicon-blackboard" aria-hidden="true"></div>
 					</a></li>
 
-					<li> <a href="#experience" class="smoothScroll"> 
+					<li> <a href="#workExperience" class="smoothScroll"> 
 						<div class="glyphicon glyphicon-briefcase" aria-hidden="true"></div>
 					</a></li>
 
@@ -71,13 +67,12 @@
 		  </div>
 		</div>
 		
-		<span id="bodyContent">
-
+		<div id="bodyContent">
 			<!-- About Section -->
-			<div id="about" name="about">
+			<div id="about">
 			  <div class="container">
 			    <div class="row white">
-			      <div class="col-md-6"> <img src="css/images/header/renfest2.png" id="aboutPicture" align=""> </div>
+			      <div class="col-md-6"> <img src="css/images/header/renfest2.png" id="aboutPicture" alt="Picture of the Programmer"> </div>
 			      <div class="col-md-6">
 			        <h3>About Me</h3>
 			        	<hr>
@@ -93,13 +88,12 @@
 			    </div>
 			    <!-- row --> 
 			  </div>
-			</div>
 			<!-- container --> 
 
 
 			<!-- Carousel, not automatic, onclick expands the picture. An entry below talks about the project. This includes links and needed information. When changed to a new project, it will fade-out old information and fade-in new information. -->
-			<!-- ==== SERVICES ==== -->
-			<div id="projects" name="services" class="col-lg-8 col-lg-offset-2">
+			<!-- Projects -->
+			<div id="projects" class="col-md-6 col-md-offset-1">
 			  <div class="container">
 			    <div class="row">
 			      <h2 class="centered">General Assembly Projects</h2>
@@ -174,20 +168,19 @@
 				        <!-- Left and right controls END -->
 				        </a>
 				    <!-- Project Carousel END -->
-					    </div>
+				   </div>
 			    <!-- row --> 
 			  </div>
-			</div>
 			<!-- container -->
 
 			<!-- Show icons/pictures that relate to each
 			job. Onlick, 3D rotate to other side, revealing the needed information (such as: company, my title, dates, location and short entry on my time there and any skills learned) -->
-			<span id="workExperience">
+			<div id="workExperience">
 				<div class="container">
    					<div class="row">
 						<h3 class="headLead">Work Experience</h3>
 						<hr>
-						<div class="col-lg-8 col-lg-offset-2 centered">
+						<div class="col-md-6 col-md-offset-1">
 							<br>
 						</div>
 					</div>
@@ -201,7 +194,7 @@
 								<figure id="jungleAnimateWrap">
 									<div id="jungleIconHolder" class="glyphicon glyphicon-globe" aria-hidden="true"></div>
 									<div id="jungleBack" class="workContainer">
-										<p><strong><b>Jungle Jim's International Market</strong> - Cheesemonger</b>
+										<p><b><strong>Jungle Jim's International Market</strong> - Cheesemonger</b>
 											<br>February 2014 - April 2015 <br>
 											My primary purpose was to prepare top-quality products for our customers, while maintaining a wealth of information about each cheese and meat we handled. This included general information, history, uses and possible recipes. It required me to learn quickly and recall a large amount of information in a short period of time.<br>
 											Further improved upon my customer service abilities, including conflict management. Entrusted to train new hires for Production and Floor responsibilities. Given responsibility over designing new displays for the Floor. 
@@ -265,30 +258,186 @@
         
 
 			<!-- Two sections(Italy and Germany). Each one will have a selection of pictures that rotate automatically with a short blurb under each carousel -->
-			<span id="travel" class="col-xs-8">
-				<h3  class="headLead">International Travel</h3>
+			<div id="travel" class="col-md-10">
+				<h3 class="headLead">International Travel</h3>
 				<hr>
-				<p><b>Italy</b> - Study Abroad</p>
-					<p>June 2011 - July 2011, Florence, Italy </p>
-					<p>Study Abroad Program through University of Dayton</p> 
-					<p> Spent one month in Florence, Italy for a University of Dayton run study abroad experience. While there, I took classes on the cultural and historical achievements of Florence. This was further supplemented by travel. Once the classes were concluded, I spent the following month traveling around Europe by myself.
+				<!-- Italy slider container -->
+				<div class="col-md-6">
+				   <!-- Italy picture slider -->
+				   <div id="content-slider">
+				      <div id="ItalySlider">  <!-- Slider container -->
+				         <div id="mask">  <!-- Mask -->
 
-					<p>Destinations included: Barcelona, Frankfurt, Berlin, Monaco, and Rome. During this time, I had to manage my own affairs, including money, lodging and food.</p>
-				<p><b>Germany</b> - Independent Travel</p>
-					<p> October 2012 - December 2012, Frankfurt am Main, Germany</p>
-					<p>After graduating from University, I returned to Frankfurt, Germany. While there, I made a number of contacts with the European Nintendo Localization Division. I also traveled throughout Germany and Belgium.</p>
-			</span>
+				         <ul>
+				            <li id="first" class="firstanimation">  <!-- ID for tooltip and class for animation -->
+				               <a href="#"> <img src="css/images/italy/florence-architecture.jpg" alt="Italian Architecture"/> </a>
+				            </li>
+
+				            <li id="second" class="secondanimation">
+				               <a href="#"> <img src="css/images/italy/florence-buildings-night.jpg" alt="Florence at Night 2"/> </a>
+				            </li>
+
+							<li id="third" class="thirdanimation">
+				               <a href="#"> <img src="css/images/italy/florence-church.jpg" alt="Italian Church"/> </a>
+				            </li>
+
+				            <li id="fourth" class="fourthanimation">
+				               <a href="#"> <img src="css/images/italy/florence-city-view.jpg" alt="Florence"/> </a>
+				            </li>
+
+				            <li id="fifth" class="fifthanimation">
+				               <a href="#"> <img src="css/images/italy/florence-duomo.jpg" alt="Florence, Italy Duomo 1"/> </a>
+				            </li>
+
+				            <li id="sixth" class="sixthanimation">
+				               <a href="#"> <img src="css/images/italy/florence-duomo-2.jpg" alt="Florence"/> </a>
+				            </li>
+
+				            <li id="seventh" class="seventhanimation">
+				               <a href="#"> <img src="css/images/italy/florence-duomo-3.jpg" alt="Florence"/> </a>
+				            </li>
+
+				            <li id="eighth" class="eighthanimation">
+				               <a href="#"> <img src="css/images/italy/florence-plaza.jpg" alt="Florence, City Center"/> </a>
+				            </li>
+
+				            <li id="ninth" class="ninthanimation">
+				               <a href="#"> <img src="css/images/italy/florence-ruins.jpg" alt="Italian Ruins"/> </a>
+				            </li>
+				         </ul>
+
+				         </div>  <!-- End Mask -->
+				      </div>  <!-- End Slider Container -->
+				   </div>
+				</div>
+				<div class="col-md-6" id="ItalyContent">
+					<p><b>Italy</b> - Study Abroad</p>
+						<p>June 2011 - July 2011, Florence, Italy </p>
+						<p>Study Abroad Program through University of Dayton</p> 
+						<p> Spent one month in Florence, Italy for a University of Dayton run study abroad experience. While there, I took classes on the cultural and historical achievements of Florence. This was further supplemented by travel. Once the classes were concluded, I spent the following month traveling around Europe by myself.
+
+						<p>Destinations included: Barcelona, Frankfurt, Berlin, Monaco, and Rome. During this time, I had to manage my own affairs, including money, lodging and food.</p>
+				</div>
+				<div class="col-md-12" style="height:3em;"></div>
+				<div class="col-md-4" id="GermanySlider">
+				   <!-- Germany picture slider -->
+				   <div id="content-slider">
+				      <div id="ItalySlider">  <!-- Slider container -->
+				         <div id="mask">  <!-- Mask -->
+
+				         <ul>
+				            <li id="first" class="firstanimation">  <!-- ID for tooltip and class for animation -->
+				               <a href="#"> <img src="css/images/germany/demon-king-and-vader-germany.jpg" alt="Frankfurt am Main - Halloween 1"/> </a>
+				            </li>
+
+				            <li id="second" class="secondanimation">
+				               <a href="#"> <img src="css/images/germany/halloween-killers-germany.jpg" alt="Frankfurt am Main - Halloween 2"/> </a>
+				            </li>
+
+							<li id="third" class="thirdanimation">
+				               <a href="#"> <img src="css/images/germany/hot-pot-germany.jpg" alt="Frankfurt am Main - Hot Pot Dinner"/> </a>
+				            </li>
+
+				            <li id="fourth" class="fourthanimation">
+				               <a href="#"> <img src="css/images/germany/trams-germany.jpg" alt="Germany - Trams"/> </a>
+				            </li>
+
+				            <li id="fifth" class="fifthanimation">
+				               <a href="#"> <img src="css/images/germany/mario-luigi-germany.jpg" alt="Germany - Octoberfest 1"/> </a>
+				            </li>
+
+				            <li id="sixth" class="sixthanimation">
+				               <a href="#"> <img src="css/images/germany/octoberfest-germany.jpg" alt="Germany - Octoberfest 2"/> </a>
+				            </li>
+
+				            <li id="seventh" class="seventhanimation">
+				               <a href="#"> <img src="css/images/germany/winter-festival-germany.jpg" alt="Frankfurt am Main - Winter Festival Carousel"/> </a>
+				            </li>
+				         </ul>
+
+				         </div>  <!-- End Mask -->
+				      </div>  <!-- End Slider Container -->
+				   </div>
+				</div>
+				<div class="col-md-6 col-md-offset-2" id="GermanyContent">
+					<p><b>Germany</b> - Independent Travel</p>
+						<p> October 2012 - December 2012, Frankfurt am Main, Germany</p>
+						<p>After graduating from University, I returned to Frankfurt, Germany. While there, I made a number of contacts with the European Nintendo Localization Division. I also traveled throughout Germany and Belgium.</p>
+				</div>
+			
 
 			<!-- Doodle section, eventually it will have a carousel (automatic movement) where the pictures upon click will expand (lightbox) -->
-			<span id="doodles" class="col-xs-8">
+			<div id="doodles" class="col-md-12">
 				<h3  class="headLead">Doodles</h3>
 				<hr>
-					<p>placeholder for dose doodles</p>	
-			</span>
-		</span>
+				<div class="col-md-12" style="height:2em;"></div>
+
+				<!-- Tall Doodle Image 1-->
+				<div id="tallImages">
+					<div class="col-md-4">
+						<img class="img-responsive" src="css/images/doodles/tall/FFXIV-character.jpg" alt="Character art Final Fantasy XXIV">
+					</div>
+					<!-- /row --> 
+
+					<!-- Tall Doodle Image 2-->
+<!-- 					<div class="col-md-6">
+					    <img class="img-responsive" src="css/images/doodles/tall/blobfish-knight.jpg" alt="Lord Blobfish">   
+					 </div> -->
+					<!-- /row --> 
+					<!-- Tall Doodle Image 3-->
+					<div class="col-md-4">
+						<img class="img-responsive" src="css/images/doodles/tall/fantasy-woman.jpg" alt="Fantasy Priestess">
+					</div>
+					<!-- /row --> 
+
+					<!-- Tall Doodle Image 4-->
+					<div class="col-md-4">
+					    <img class="img-responsive" src="css/images/doodles/tall/monster-fly.jpg" alt="Monster Fly"> 
+					</div>
+					<!-- /row --> 
+
+					<div class="col-md-12" style="height:2em;"></div>
+
+					<!-- WIDE IMAGES -->
+						<!-- wide doodle 1 -->
+						  <div class="col-md-4">
+						    <img class="img-responsive" src="css/images/doodles/wide/dinosaur-pun.jpg" alt="Dinosaur Pun">
+						  </div>
+
+						<!-- wide doodle 2 -->
+						  <div class="col-md-4">
+						    <img class="img-responsive" src="css/images/doodles/wide/mammoth-headshot.jpg" alt="Mammoth head">
+						  </div>
+
+						<!-- wide doodle 3 -->
+						  <div class="col-md-4">
+						    <img class="img-responsive" src="css/images/doodles/wide/native-american-bird-woman.jpg" alt="bird woman">
+						  </div>
+					<!-- End WIDE IMAGES -->
+					<div class="col-md-12" style="height:5em;"></div>
+
+				</div>
+			  </div>	
+			</div>	
+		  </div>	
+		</div>	
+		<!-- body content ender -->
+	  </div>		
 	</body>
-	<script type="text/javascript">
-
-
-</script>
+	<script>
+	$(function() {
+	  $('a[href*=#]:not([href=#])').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+	      var target = $(this.hash);
+	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	      if (target.length) {
+	        $('html,body').animate({
+	          scrollTop: target.offset().top
+	        }, 1000);
+	        return false;
+	      }
+	    }
+	  });
+	});
+	</script>
 </html>

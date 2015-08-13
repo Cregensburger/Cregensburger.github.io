@@ -35,7 +35,8 @@
 	}
 
 		#icons ul li a {
-			font-size: 200%;
+			font-size: 125%;
+			display: inline-block;
 		}
 
 	/* Name navigation styling */
@@ -71,11 +72,11 @@
 
 /* Project Styling Section */
 	.projectImages {
-		position: relative;
-		left: 20%;
 		width: 60%;
 		margin: 0 auto;
     	padding-top: 2em;
+    	position: relative;
+    	left: 50em;
 	}
 
 	.carousel-caption {
@@ -301,39 +302,39 @@
 
 		/* Slider Animation Cycle part 2 */
 			#ItalySlider li.firstanimation {
-			   animation: cycle 45s linear infinite;
+			   animation: cycle 15s linear infinite;
 			}
 
 			#ItalySlider li.secondanimation {
-			   animation: cycletwo 45s linear infinite;
+			   animation: cycletwo 15s linear infinite;
 			}
 
 			#ItalySlider li.thirdanimation {
-			   animation: cyclethree 45s linear infinite;
+			   animation: cyclethree 15s linear infinite;
 			}
 
 			#ItalySlider li.fourthanimation {
-			   animation: cyclefour 45s linear infinite;
+			   animation: cyclefour 15s linear infinite;
 			}
 
 			#ItalySlider li.fifthanimation {
-			   animation: cyclefive 45s linear infinite;
+			   animation: cyclefive 15s linear infinite;
 			}
 
 			#ItalySlider li.sixthanimation {
-			   animation: cyclesix 45s linear infinite;
+			   animation: cyclesix 15s linear infinite;
 			}
 
 			#ItalySlider li.seventhanimation {
-			   animation: cycleseven 45s linear infinite;
+			   animation: cycleseven 15s linear infinite;
 			}
 
 			#ItalySlider li.eighthanimation {
-			   animation: cycleeight 45s linear infinite;
+			   animation: cycleeight 15s linear infinite;
 			}
 
 			#ItalySlider li.ninthanimation {
-			   animation: cyclenine 45s linear infinite;
+			   animation: cyclenine 15s linear infinite;
 			}
 
 		/* Animation Code part 3 */

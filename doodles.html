@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>C. Regensburger Portfolio</title>
+		
+	<!-- Outside Links -->
+		<!-- Bootstrap linking -->
+		<link href="css/bootstrap.css" rel="stylesheet">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+		<!--Carousel link-->
+ 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+		<!-- jQuery shenanigans -->
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+		<!-- normalizing links -->
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<link rel="stylesheet" href="css/normalize.css">
+
+		<!-- font -->
+		<link href='http://fonts.googleapis.com/css?family=Hind:400,700|Roboto+Slab:400,300' rel='stylesheet' type='text/css'>
+
+	<!-- My custom stylesheet -->
+		<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+		
+	</head>
+	<!-- nav bar information -->
+	<body data-spy="scroll" data-offset="0" data-target="#navbar-main">	
+		<!-- actual header sections, broken up into three rows: 
+		my name, tagline and the navigation. Should stack cleanly
+		when window size shrinks. -->
+		<div class="row" id="navigation">
+
+		<!-- display icons in the header -->	
+		<div class="navbar navbar-default navbar-fixed-top">
+		    <div class="container">
+		      <div class="navbar-header">
+		        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+		        <a class="navbar-brand" href="#home">
+					<div id="tabHeadLine"><strong>Courtney Regensburger</strong></div>
+				</a> 
+			  </div>
+		      <div class="navbar-collapse collapse" id="icons">
+		        <ul class="nav navbar-nav navbar-right">
+					<li> <a href="about.html" class="smoothScroll"> 
+						<div class="glyphicon glyphicon-user" aria-hidden="true" class="smoothScroll"> About</div>
+					</a></li>
+
+					<li> <a href="projects.html" class="smoothScroll"> 
+						<div class="glyphicon glyphicon-blackboard" aria-hidden="true" class="smoothScroll"> Projects</div>
+					</a></li>
+
+					<li> <a href="work.html" class="smoothScroll"> 
+						<div class="glyphicon glyphicon-briefcase" aria-hidden="true" class="smoothScroll"> Experience</div>
+					</a></li>
+
+					<li> <a href="travel.html" class="smoothScroll">
+						<div class="glyphicon glyphicon-plane" aria-hidden="true" class="smoothScroll"> Travel</div>
+					</a></li>
+
+					<li> <a href="doodles.html" class="smoothScroll">
+						<div class="glyphicon glyphicon-pencil" aria-hidden="true" class="smoothScroll"> Doodles</div>
+					</a></li>
+		        </ul>
+		      </div>
+		      <!--/.nav-collapse --> 
+		    </div>
+		  </div>
+		</div>
+		<div id="bodyContent" data-spy="scroll" data-offset="0" data-target="#navbar-main">
+		<!-- Doodle Section -->
+		<!-- Doodle section, eventually it will have a carousel (automatic movement) where the pictures upon click will expand (lightbox) -->
+			<div id="doodles" class="col-md-12">
+				<h3  class="headLead">Doodles</h3>
+				<hr>
+				<div class="col-md-12" style="height:2em;"></div>
+
+				<!-- Tall Doodle Image 1-->
+				<div id="tallImages">
+					<div class="col-md-4">
+						<img class="img-responsive" src="css/images/doodles/tall/FFXIV-character.jpg" alt="Character art Final Fantasy XXIV">
+					</div>
+					<!-- /row --> 
+
+					<!-- Tall Doodle Image 2-->
+					<div class="col-md-4">
+					    <img class="img-responsive" src="css/images/doodles/tall/blobfish-knight.jpg" alt="Lord Blobfish">   
+					 </div>
+					<!-- /row --> 
+					<!-- Tall Doodle Image 3-->
+					<div class="col-md-4">
+						<img class="img-responsive" src="css/images/doodles/tall/fantasy-woman.jpg" alt="Fantasy Priestess">
+					</div>
+					<!-- /row --> 
+					<div class="col-md-12" style="height:1em;"></div>
+					<!-- Tall Doodle Image 4-->
+					<div class="col-md-4">
+					    <img class="img-responsive" src="css/images/doodles/tall/monster-fly.jpg" alt="Monster Fly"> 
+					</div>
+					<!-- /row --> 
+				</div>
+					<!-- WIDE IMAGES -->
+					<div id="wideImages">
+						<!-- wide doodle 1 -->
+						<div class="col-md-4">
+						    <img class="img-responsive" src="css/images/doodles/wide/mammoth-headshot.jpg" alt="Mammoth head">
+						</div>
+
+						<!-- wide doodle 2 -->
+						<div class="col-md-4">
+						    <img class="img-responsive" src="css/images/doodles/wide/native-american-bird-woman.jpg" alt="bird woman">
+						</div>
+
+
+						<!-- wide doodle 3 -->
+						<div class="col-md-4">
+						    <img class="img-responsive" src="css/images/doodles/wide/dinosaur-pun.jpg" alt="Dinosaur Pun">
+						</div>
+					</div>
+					<!-- End WIDE IMAGES -->
+				<div class="col-md-12" style="height:5em;"></div>
+			</div>
+		<!-- body content ender -->
+	</body>
+</html>

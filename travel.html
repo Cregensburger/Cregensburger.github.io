@@ -1,0 +1,189 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>C. Regensburger Portfolio</title>
+		
+	<!-- Outside Links -->
+		<!-- Bootstrap linking -->
+		<link href="css/bootstrap.css" rel="stylesheet">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+		<!--Carousel link-->
+ 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+		<!-- jQuery shenanigans -->
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+		<!-- normalizing links -->
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<link rel="stylesheet" href="css/normalize.css">
+
+		<!-- font -->
+		<link href='http://fonts.googleapis.com/css?family=Hind:400,700|Roboto+Slab:400,300' rel='stylesheet' type='text/css'>
+
+	<!-- My custom stylesheet -->
+		<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+		
+	</head>
+	<!-- nav bar information -->
+	<body data-spy="scroll" data-offset="0" data-target="#navbar-main">	
+		<!-- actual header sections, broken up into three rows: 
+		my name, tagline and the navigation. Should stack cleanly
+		when window size shrinks. -->
+		<div class="row" id="navigation">
+
+		<!-- display icons in the header -->	
+		<div class="navbar navbar-default navbar-fixed-top">
+		    <div class="container">
+		      <div class="navbar-header">
+		        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+		        <a class="navbar-brand" href="#home">
+					<div id="tabHeadLine"><strong>Courtney Regensburger</strong></div>
+				</a> 
+			  </div>
+		      <div class="navbar-collapse collapse" id="icons">
+		        <ul class="nav navbar-nav navbar-right">
+					<li> <a href="#about" class="smoothScroll"> 
+						<div class="glyphicon glyphicon-user" aria-hidden="true" class="smoothScroll"> About</div>
+					</a></li>
+
+					<li> <a href="#projects" class="smoothScroll"> 
+						<div class="glyphicon glyphicon-blackboard" aria-hidden="true" class="smoothScroll"> Projects</div>
+					</a></li>
+
+					<li> <a href="#workExperience" class="smoothScroll"> 
+						<div class="glyphicon glyphicon-briefcase" aria-hidden="true" class="smoothScroll"> Experience</div>
+					</a></li>
+
+					<li> <a href="#travel" class="smoothScroll">
+						<div class="glyphicon glyphicon-plane" aria-hidden="true" class="smoothScroll"> Travel</div>
+					</a></li>
+
+					<li> <a href="#doodles" class="smoothScroll">
+						<div class="glyphicon glyphicon-pencil" aria-hidden="true" class="smoothScroll"> Doodles</div>
+					</a></li>
+		        </ul>
+		      </div>
+		      <!--/.nav-collapse --> 
+		    </div>
+		  </div>
+		</div>
+		<div id="bodyContent" data-spy="scroll" data-offset="0" data-target="#navbar-main">
+		<!-- Travel Section -->
+		<!-- Two sections(Italy and Germany). Each one will have a selection of pictures that rotate automatically with a short blurb under each carousel -->
+			<div id="travel" class="col-md-10">
+				<h3 class="headLead">International Travel</h3>
+				<hr>
+				<!-- Italy slider container -->
+				<div class="col-md-6">
+				   <!-- Italy picture slider -->
+				   <div id="content-slider">
+				      <div id="ItalySlider">  <!-- Slider container -->
+				         <div id="mask">  <!-- Mask -->
+
+				         <ul>
+				            <li id="first" class="firstanimation">  <!-- ID for tooltip and class for animation -->
+				               <img src="css/images/italy/florence-architecture.jpg" alt="Italian Architecture"/>
+				            </li>
+
+				            <li id="second" class="secondanimation">
+				               <img src="css/images/italy/florence-buildings-night.jpg" alt="Florence at Night 2"/>
+				            </li>
+
+							<li id="third" class="thirdanimation">
+				               <img src="css/images/italy/florence-church.jpg" alt="Italian Church"/>
+				            </li>
+
+				            <li id="fourth" class="fourthanimation">
+				               <img src="css/images/italy/florence-city-view.jpg" alt="Florence"/>
+				            </li>
+
+				            <li id="fifth" class="fifthanimation">
+				               <img src="css/images/italy/florence-duomo.jpg" alt="Florence, Italy Duomo 1"/>
+				            </li>
+
+				            <li id="sixth" class="sixthanimation">
+				               <img src="css/images/italy/florence-duomo-2.jpg" alt="Florence"/>
+				            </li>
+
+				            <li id="seventh" class="seventhanimation">
+				               <img src="css/images/italy/florence-duomo-3.jpg" alt="Florence"/>
+				            </li>
+
+				            <li id="eighth" class="eighthanimation">
+				               <img src="css/images/italy/florence-plaza.jpg" alt="Florence, City Center"/>
+				            </li>
+
+				            <li id="ninth" class="ninthanimation">
+				               <img src="css/images/italy/florence-ruins.jpg" alt="Italian Ruins"/>
+				            </li>
+				         </ul>
+
+				         </div>  <!-- End Mask -->
+				      </div>  <!-- End Slider Container -->
+				   </div>
+				</div>
+				<div class="col-md-6" id="ItalyContent">
+					<p><b>Italy</b> - Study Abroad</p>
+						<p>June 2011 - July 2011, Florence, Italy </p>
+						<p>Study Abroad Program through University of Dayton</p> 
+						<p> Spent one month in Florence, Italy for a University of Dayton run study abroad experience. While there, I took classes on the cultural and historical achievements of Florence. This was further supplemented by travel. Once the classes were concluded, I spent the following month traveling around Europe by myself.
+
+						<p>Destinations included: Barcelona, Frankfurt, Berlin, Monaco, and Rome. During this time, I had to manage my own affairs, including money, lodging and food.</p>
+				</div>
+				<div class="col-md-12" style="height:3em;"></div>
+				<div class="col-md-4" id="GermanySlider">
+				   <!-- Germany picture slider -->
+				   <div id="content-slider">
+				      <div id="ItalySlider">  <!-- Slider container -->
+				         <div id="mask">  <!-- Mask -->
+
+				         <ul>
+				            <li id="first" class="firstanimation">  <!-- ID for tooltip and class for animation -->
+				               <img src="css/images/germany/demon-king-and-vader-germany.jpg" alt="Frankfurt am Main - Halloween 1"/>
+				            </li>
+
+				            <li id="second" class="secondanimation">
+				               <img src="css/images/germany/halloween-killers-germany.jpg" alt="Frankfurt am Main - Halloween 2"/>
+				            </li>
+
+							<li id="third" class="thirdanimation">
+				               <img src="css/images/germany/hot-pot-germany.jpg" alt="Frankfurt am Main - Hot Pot Dinner"/>
+				            </li>
+
+				            <li id="fourth" class="fourthanimation">
+				               <img src="css/images/germany/trams-germany.jpg" alt="Germany - Trams"/>
+				            </li>
+
+				            <li id="fifth" class="fifthanimation">
+				               <img src="css/images/germany/mario-luigi-germany.jpg" alt="Germany - Octoberfest 1"/>
+				            </li>
+
+				            <li id="sixth" class="sixthanimation">
+				               <img src="css/images/germany/octoberfest-germany.jpg" alt="Germany - Octoberfest 2"/>
+				            </li>
+
+				            <li id="seventh" class="seventhanimation">
+				               <img src="css/images/germany/winter-festival-germany.jpg" alt="Frankfurt am Main - Winter Festival Carousel"/>
+				            </li>
+				         </ul>
+
+				         </div>  <!-- End Mask -->
+				      </div>  <!-- End Slider Container -->
+				   </div>
+				</div>
+				<div class="col-md-6 col-md-offset-2" id="GermanyContent">
+					<p><b>Germany</b> - Independent Travel</p>
+						<p> October 2012 - December 2012, Frankfurt am Main, Germany</p>
+						<p>After graduating from University, I returned to Frankfurt, Germany. While there, I made a number of contacts with the European Nintendo Localization Division. I also traveled throughout Germany and Belgium.</p>
+				</div>
+				<div class="col-md-12" style="height:5em;"></div>
+			</div>
+		<!-- body content ender -->
+	</body>
+</html>

@@ -3,6 +3,7 @@
 	#krogerAnimateWrap, #universityAnimateWrap {
 		background-color: #31A9B7;
 		height: 300%;
+		min-height: 15em;
 		border-radius: 1em;
 		color: white;
 		padding: 1em;
@@ -16,17 +17,33 @@
 		#jungleIconHolder, #woodIconHolder, 
 		#krogerIconHolder, #universityIconHolder {
 			color: white;
-			border-radius: 50%;
 			padding: .2em;
-			font-size: 800%;
 			position: absolute;
-			left: 35%;
 		}
+			#jungleIconHolder {
+				max-height: 6em;
+				bottom: 25%;
+				left: 15%;
 
-		#woodIconHolder, #krogerIconHolder {
-			font-size: 625%
-		}
+			}
 
+			#woodIconHolder {
+				max-height: 5em;
+				bottom: 30%;
+				left: 9%;
+			}
+
+			#krogerIconHolder {
+				max-height: 14em;
+				bottom: 5%;
+				left: 28%;
+			}
+
+			#universityIconHolder {
+				max-height: 10em;
+				left: 25%;
+				top: 18%;
+			}
 
 			#jungleIconHolder, #jungleBack, 
 			#woodIconHolder, #woodBack, 

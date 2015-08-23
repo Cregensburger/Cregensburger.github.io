@@ -1,0 +1,6 @@
+/* Media query phone sized */
+	@media (max-width: 700px) { 
+		.carousel-caption {
+			max-width: 70%;
+		}
+	}

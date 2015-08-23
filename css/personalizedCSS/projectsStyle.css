@@ -1,0 +1,14 @@
+/* Project Styling Section */
+	.projectImages {
+		height: 10em;
+		border-radius: 100%;
+		position: relative;
+		left: 20%;
+	}
+
+	.projectBlurb, .projectBlurb:hover {
+		text-decoration: none;
+		color: #2e3133;
+		position: relative;
+		left: 20%;
+	}

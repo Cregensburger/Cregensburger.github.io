@@ -1,7 +1,7 @@
 /* About Me Styling */
-	#about img {
+	#aboutHolder img {
 		margin-top: 0;
-		width: 50%;
+		width: 80%;
 		position: relative;
 		left: 10%;
 	}

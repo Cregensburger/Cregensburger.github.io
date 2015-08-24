@@ -82,11 +82,13 @@
 		
 		<div id="bodyContent" data-spy="scroll" data-offset="0" data-target="#navbar-main">		
 		<!-- About Section -->
-			 <div id="about">
+			 <div id="about"></div>
+			 <div id="aboutHolder">
+				<div class="col-md-12" style="height:5em;"></div>
 			  	<div class="container">
 			      <div class="row white">
-			      	<div class="col-md-5"> <img src="css/images/header/renfest2.png" id="aboutPicture" alt="Picture of the Programmer"> </div>
-			      	  <div class="col-md-7">
+			      	<div class="col-md-4"> <img src="css/images/header/renfest2.png" id="aboutPicture" alt="Picture of the Programmer"> </div>
+			      	  <div class="col-md-8">
 				        <h2>About Me</h2>
 				        	<hr>
 				        	<p>Over the past three months, I have attended the programming bootcamp, General Assembly. In that time, I have learned a full-stack set of skills and utilized them on various projects. My first project, Tic Tac Toe, represents a key point in my development as a programmer. It was here that I began to learn effective planning, including wireframes and pseudo-coding, and how to implement unknown tools. </p>
@@ -102,11 +104,10 @@
 			    		<!-- row --> 
 			 	  </div>
 				  <!-- container --> 
-				 <div class="col-md-12" style="height:5em;"></div>
 				</div>
-
 		<!-- Project Section -->
-			<div id="projects">
+			<div id="projects"></div>
+			<div class="col-md-12" style="height:5em;"></div>
 			  <div class="container">
 			    <div class="row">
 			     <h2 class="col-lg-12">Freelance Projects</h2>
@@ -116,17 +117,24 @@
 						<span id="heroicStoryContainer" class="col-lg-6">
 							<div style="background:red; width: 10em;" class="projectImages"></div>
 							<br><br>
+								<h5> Heroic Story</h5>
 								<p class="large"> Done during my time as a General Assembly student. A simple choose-your-own-adventure-game. Originally starting out as an exercise to find an alternative to alerts and prompts, the project grew. However, I became enamoured with the game and wanted to see it grow. Still a work in progress, but I am pleased thus far with it's progression. Though primarily a HTML/CSS/JavaScript game, I have started to implement Ruby on Rails with the aim of expanding the capabilities of the game and site. The MVP site is still a work in progress and as such has not been launched.</p>
 								<br>
 								<a href="https://github.com/Cregensburger/HeroicStory" class="projectBlurb">Github</a><br><br>
 						</span>
 
 						<span id="bastablePhotography" class="col-lg-6">
-							<div style="background:blue; width: 10em;" class="projectImages"></div>
+							<img src="css/images/projects/mBastable.jpg" id="mBastable"  class="projectImages" alt="Picture of the M. Bastable">
 							<br><br>
-								<p class="large"> A pro bono website for a photographer. I wanted to experiment more with bootstrap frameworks and Ruby on Rails. In this project, the client provided me with a "wishlist" of features she wanted on her site. A list of those desires can be found on the github page. The MVP site is still a work in progress and as such has not been launched.</p>
+								<h5>M. Bastable Photography </h5>
+								<p class="large"> My current project as of late. A pro bono website for a photographer. In this project, the client provided me with a "wishlist" of features she wanted on her site. A list of those desires can be found on the github page. Although the MVP is complete, there is more to do. </p>
 								<br>
-								<a href="https://github.com/Cregensburger/bastablephotography" class="projectBlurb">Github</a><br><br>
+								<a href="https://github.com/Cregensburger/bastablephotography" class="projectBlurb">Github</a> 
+									<a class="projectBlurb" >+</a>
+								<a href="http://hydrographer-dozen-31263.bitballoon.com/" class="projectBlurb">
+									Application Link
+								</a>
+								<br><br>
 						</span>
 
 						<!--<span id="cookieMonster" class="col-lg-4">
@@ -137,11 +145,13 @@
 								
 						</span>-->
 						<!-- END PLACEHOLDER -->
-					</div>
 				
 					<br><br><br>
-			      <h2 class="col-lg-12">General Assembly Projects</h2>
-			      <hr> <br>
+				<div id="generalAssemblyBlurb"></div>
+				  <div class="col-md-12" style="height:1em;"></div>
+				   <div id="GAHolder">
+			        <h2 class="col-lg-12">General Assembly Projects</h2>
+			         <hr> <br>
 				    <span id="generalAssemblyBlurb" class="col-lg-11">
 						<p class="large">General Assembly is an educational institute that offers full-time immersive programs, including such courses as: web development, user experience design, and digital marketing. I attended the Web Development Immersive, a three month long bootcamp dedicated to teaching non-programmers a general full-stack set of skills.
 						<p class="large">While attending WDI, I have learned about a number of tools, including: programming fundamentals, product development, front-end web development and back-end web development.</p>
@@ -192,13 +202,15 @@
 				</div>
 
 			  <!-- container -->
+			   </div>
 			  </div>
-
 			<!-- all projects container, col-md-6 -->
-			</div>
+
 		<!-- Work Experience Section -->
 			<br><br><br>
-			<span id="work">
+			<div id="work"></div>
+						<div class="col-md-12" style="height:5em;"></div>
+				
 				<div class="container">
    					<div class="row">
    						<br>
@@ -278,14 +290,16 @@
 							  </div>
 							 <!-- /grid-mask --> 
 							</div>
+						</div>
 						<div class="col-md-12" style="height:5em;"></div>
-			</span>
+
 
 		<!-- Travel Section -->
     
     	<!-- Doodle Section -->
-    		<div id="doodles" class="col-md-12">
-				<h3  class="headLead">Doodles</h3>
+    		<div id="doodles"></div>
+				<div class="col-md-12" style="height:1em;"></div>
+				<h2 class="col-lg-12">Doodles</h2>
 				<hr>
 				<div class="col-md-12" style="height:2em;"></div>
 
@@ -339,7 +353,8 @@
 					</div>
 					<!-- End WIDE IMAGES -->
 				<div class="col-md-12" style="height:5em;"></div>
-			</div>
+
+
 		<script type="text/javascript">
 			$(function() {
 			  $('a[href*=#]:not([href=#])').click(function() {

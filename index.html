@@ -81,19 +81,19 @@
 		
 
 		<!-- About Section -->
-			<div id="about"></div>
+			<div id="about" class="fade"></div>
 			 <div id="aboutHolder">
 				<div class="col-md-12" style="height:5em;"></div>
 				<br><br><br><br><br>
 			  	<div class="container">
 			      <div class="row white">
-			      	<div class="col-md-4"> <img src="css/images/head_image/headshot.jpg" id="aboutPicture" alt="Picture of the Programmer"> </div>
+			      	<div class="col-md-4"> <img src="css/images/head_image/headshot.jpg" id="aboutPicture" class="fade" alt="Picture of the Programmer"> </div>
 			      	  <div class="col-md-8">
-				        <h2>About Me</h2>
+				        <h2 class="fade">About Me</h2>
 				        	<hr>
-				        	<p> A college graduate with three years of professional working experience. Highly responsible, considerate, and energetic. I'm known for adjusting well to shifting work duties, a reputation for learning quickly, and completing assignments under pressure that require attention to detail. </p>
-							<p>I am an aspiring web developer.</p>
-							<ol id="contactMeList" style="list-style: none;">
+				        	<p class="fade"> A college graduate with three years of professional working experience. Highly responsible, considerate, and energetic. I'm known for adjusting well to shifting work duties, a reputation for learning quickly, and completing assignments under pressure that require attention to detail. </p>
+							<p class="fade">I am an aspiring web developer.</p>
+							<ol id="contactMeList" style="list-style: none;" class="fade">
 								<li><p><b> Email:</b>  <a href="regenscm@gmail.com">regenscm@gmail.com</a></p></li>
 								<li><p><b> Phone:</b>  (513) 368-2670 </p></li>
 								<li><p><b><a href="https://www.linkedin.com/pub/courtney-regensburger/7a/a00/55"> LinkedIn</a></p></li></b> 
@@ -292,21 +292,18 @@
 
 			            if ( objectTop < windowBottom ) {
 			                if ( objectTop < windowBottom - animation_height ) {
-			                    $(this).html( 'fully visible' );
 			                    $(this).css( {
-			                        transition: 'opacity 0.1s linear',
+			                        transition: 'opacity 1s linear',
 			                        opacity: 1
 			                    } );
 
 			                } else {
-			                    $(this).html( 'fading in/out' );
 			                    $(this).css( {
-			                        transition: 'opacity 0.25s linear',
+			                        transition: 'opacity .5s linear',
 			                        opacity: (windowBottom - objectTop) * ratio
 			                    } );
 			                }
 			            } else {
-			                $(this).html( 'not visible' );
 			                $(this).css( 'opacity', 0 );
 			            }
 				        });

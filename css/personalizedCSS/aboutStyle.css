@@ -4,6 +4,7 @@
 		width: 80%;
 		position: relative;
 		left: 10%;
+		border-radius: 50%;
 	}
 
 	/* number removal */
@@ -16,3 +17,7 @@
 			text-decoration: underline;
 			color: #5C6267;
 		}
+
+	.fade {
+    	opacity:1;
+    }

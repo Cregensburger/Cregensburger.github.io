@@ -1,10 +1,10 @@
 /* Overarching body style*/
 	html, body {
 		height: 100%;
+		background-color: #FFEBCD;
 	}
 
 	body {
-		background-image: url("texture/skulls/skulls.png");
 		color: #2e3133;
 		line-height: 1.3;
 		margin-top: 7em;
@@ -17,10 +17,10 @@
 		height: 3px;
 		border: 0;
 		padding: 0;
-		background-image: -webkit-linear-gradient(left, #f4eee3, #e86e73, #f4eee3);
-		background-image: -moz-linear-gradient(left, #f4eee3, #e86e73, #f4eee3);
-		background-image: -ms-linear-gradient(left, #f4eee3, #e86e73, #f4eee3);
-		background-image: -o-linear-gradient(left, #f4eee3, #e86e73, #f4eee3);
+		background-image: -webkit-linear-gradient(left, #f4eee3, #0047b3, #f4eee3);
+		background-image: -moz-linear-gradient(left, #f4eee3, #0047b3, #f4eee3);
+		background-image: -ms-linear-gradient(left, #f4eee3, #0047b3, #f4eee3);
+		background-image: -o-linear-gradient(left, #f4eee3, #0047b3, #f4eee3);
 		width: 75%;
 		border: none;
 	}
@@ -29,11 +29,15 @@
 		font-family: 'Roboto Slab', serif;
 	}
 
+	.fade {
+    	opacity:1;
+    }
+
 /* Navigation styling */
 	.navbar-default {
-		background-color: rgba(232, 110, 115, .75);
+		background-color: rgba(0, 71, 179, .80);
 		padding: 12px 0;
-		box-shadow: 0 0 3px #2e3133;
+		box-shadow: 0 0 3px #0047b3;
 		font-weight: 500;
 		font-family: 'Hind', sans-serif;
 	}

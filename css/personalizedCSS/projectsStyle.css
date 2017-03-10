@@ -18,3 +18,13 @@
 		max-height: 10em;
 		border-radius: 100%;
 	}
+
+	#beverage_butler {
+		max-width: 10em;
+		max-height: 10em;
+		border-radius: 100%;
+	}
+
+	.fade {
+    	opacity:1;
+    }
